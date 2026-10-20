@@ -1,0 +1,2977 @@
+[
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00",
+   "0:00:00"
+  ],
+  "expected": "Both times are the same, so the shift is 0 seconds. Nothing moves."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00",
+   "0:00:00.000"
+  ],
+  "expected": "Both times are the same, so the shift is 0 seconds. Nothing moves."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00",
+   "0:01:05.200"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 0:01:05.200. Moving every line 65.2 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00",
+   "0:01:07,700"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 0:01:07.700. Moving every line 67.7 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00",
+   "1:00:00"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 1:00:00.000. Moving every line 3600 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00",
+   "10:20:30.5"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 10:20:30.500. Moving every line 37230.5 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00",
+   "0:59:59.999"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 0:59:59.999. Moving every line 3599.999 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00",
+   "99:59:59.999"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 99:59:59.999. Moving every line 359999.999 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00",
+   "99:59:59"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 99:59:59.000. Moving every line 359999 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00.000",
+   "0:00:00"
+  ],
+  "expected": "Both times are the same, so the shift is 0 seconds. Nothing moves."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00.000",
+   "0:00:00.000"
+  ],
+  "expected": "Both times are the same, so the shift is 0 seconds. Nothing moves."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00.000",
+   "0:01:05.200"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 0:01:05.200. Moving every line 65.2 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00.000",
+   "0:01:07,700"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 0:01:07.700. Moving every line 67.7 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00.000",
+   "1:00:00"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 1:00:00.000. Moving every line 3600 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00.000",
+   "10:20:30.5"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 10:20:30.500. Moving every line 37230.5 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00.000",
+   "0:59:59.999"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 0:59:59.999. Moving every line 3599.999 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00.000",
+   "99:59:59.999"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 99:59:59.999. Moving every line 359999.999 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00.000",
+   "99:59:59"
+  ],
+  "expected": "A line shown at 0:00:00.000 should appear at 99:59:59.000. Moving every line 359999 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:05.200",
+   "0:00:00"
+  ],
+  "expected": "A line shown at 0:01:05.200 should appear at 0:00:00.000. Moving every line 65.2 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:05.200",
+   "0:00:00.000"
+  ],
+  "expected": "A line shown at 0:01:05.200 should appear at 0:00:00.000. Moving every line 65.2 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:05.200",
+   "0:01:05.200"
+  ],
+  "expected": "Both times are the same, so the shift is 0 seconds. Nothing moves."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:05.200",
+   "0:01:07,700"
+  ],
+  "expected": "A line shown at 0:01:05.200 should appear at 0:01:07.700. Moving every line 2.5 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:05.200",
+   "1:00:00"
+  ],
+  "expected": "A line shown at 0:01:05.200 should appear at 1:00:00.000. Moving every line 3534.8 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:05.200",
+   "10:20:30.5"
+  ],
+  "expected": "A line shown at 0:01:05.200 should appear at 10:20:30.500. Moving every line 37165.3 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:05.200",
+   "0:59:59.999"
+  ],
+  "expected": "A line shown at 0:01:05.200 should appear at 0:59:59.999. Moving every line 3534.799 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:05.200",
+   "99:59:59.999"
+  ],
+  "expected": "A line shown at 0:01:05.200 should appear at 99:59:59.999. Moving every line 359934.799 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:05.200",
+   "99:59:59"
+  ],
+  "expected": "A line shown at 0:01:05.200 should appear at 99:59:59.000. Moving every line 359933.8 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:07,700",
+   "0:00:00"
+  ],
+  "expected": "A line shown at 0:01:07.700 should appear at 0:00:00.000. Moving every line 67.7 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:07,700",
+   "0:00:00.000"
+  ],
+  "expected": "A line shown at 0:01:07.700 should appear at 0:00:00.000. Moving every line 67.7 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:07,700",
+   "0:01:05.200"
+  ],
+  "expected": "A line shown at 0:01:07.700 should appear at 0:01:05.200. Moving every line 2.5 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:07,700",
+   "0:01:07,700"
+  ],
+  "expected": "Both times are the same, so the shift is 0 seconds. Nothing moves."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:07,700",
+   "1:00:00"
+  ],
+  "expected": "A line shown at 0:01:07.700 should appear at 1:00:00.000. Moving every line 3532.3 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:07,700",
+   "10:20:30.5"
+  ],
+  "expected": "A line shown at 0:01:07.700 should appear at 10:20:30.500. Moving every line 37162.8 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:07,700",
+   "0:59:59.999"
+  ],
+  "expected": "A line shown at 0:01:07.700 should appear at 0:59:59.999. Moving every line 3532.299 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:07,700",
+   "99:59:59.999"
+  ],
+  "expected": "A line shown at 0:01:07.700 should appear at 99:59:59.999. Moving every line 359932.299 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:07,700",
+   "99:59:59"
+  ],
+  "expected": "A line shown at 0:01:07.700 should appear at 99:59:59.000. Moving every line 359931.3 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:00:00",
+   "0:00:00"
+  ],
+  "expected": "A line shown at 1:00:00.000 should appear at 0:00:00.000. Moving every line 3600 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:00:00",
+   "0:00:00.000"
+  ],
+  "expected": "A line shown at 1:00:00.000 should appear at 0:00:00.000. Moving every line 3600 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:00:00",
+   "0:01:05.200"
+  ],
+  "expected": "A line shown at 1:00:00.000 should appear at 0:01:05.200. Moving every line 3534.8 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:00:00",
+   "0:01:07,700"
+  ],
+  "expected": "A line shown at 1:00:00.000 should appear at 0:01:07.700. Moving every line 3532.3 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:00:00",
+   "1:00:00"
+  ],
+  "expected": "Both times are the same, so the shift is 0 seconds. Nothing moves."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:00:00",
+   "10:20:30.5"
+  ],
+  "expected": "A line shown at 1:00:00.000 should appear at 10:20:30.500. Moving every line 33630.5 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:00:00",
+   "0:59:59.999"
+  ],
+  "expected": "A line shown at 1:00:00.000 should appear at 0:59:59.999. Moving every line 0.001 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:00:00",
+   "99:59:59.999"
+  ],
+  "expected": "A line shown at 1:00:00.000 should appear at 99:59:59.999. Moving every line 356399.999 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:00:00",
+   "99:59:59"
+  ],
+  "expected": "A line shown at 1:00:00.000 should appear at 99:59:59.000. Moving every line 356399 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "10:20:30.5",
+   "0:00:00"
+  ],
+  "expected": "A line shown at 10:20:30.500 should appear at 0:00:00.000. Moving every line 37230.5 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "10:20:30.5",
+   "0:00:00.000"
+  ],
+  "expected": "A line shown at 10:20:30.500 should appear at 0:00:00.000. Moving every line 37230.5 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "10:20:30.5",
+   "0:01:05.200"
+  ],
+  "expected": "A line shown at 10:20:30.500 should appear at 0:01:05.200. Moving every line 37165.3 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "10:20:30.5",
+   "0:01:07,700"
+  ],
+  "expected": "A line shown at 10:20:30.500 should appear at 0:01:07.700. Moving every line 37162.8 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "10:20:30.5",
+   "1:00:00"
+  ],
+  "expected": "A line shown at 10:20:30.500 should appear at 1:00:00.000. Moving every line 33630.5 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "10:20:30.5",
+   "10:20:30.5"
+  ],
+  "expected": "Both times are the same, so the shift is 0 seconds. Nothing moves."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "10:20:30.5",
+   "0:59:59.999"
+  ],
+  "expected": "A line shown at 10:20:30.500 should appear at 0:59:59.999. Moving every line 33630.501 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "10:20:30.5",
+   "99:59:59.999"
+  ],
+  "expected": "A line shown at 10:20:30.500 should appear at 99:59:59.999. Moving every line 322769.499 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "10:20:30.5",
+   "99:59:59"
+  ],
+  "expected": "A line shown at 10:20:30.500 should appear at 99:59:59.000. Moving every line 322768.5 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:59:59.999",
+   "0:00:00"
+  ],
+  "expected": "A line shown at 0:59:59.999 should appear at 0:00:00.000. Moving every line 3599.999 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:59:59.999",
+   "0:00:00.000"
+  ],
+  "expected": "A line shown at 0:59:59.999 should appear at 0:00:00.000. Moving every line 3599.999 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:59:59.999",
+   "0:01:05.200"
+  ],
+  "expected": "A line shown at 0:59:59.999 should appear at 0:01:05.200. Moving every line 3534.799 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:59:59.999",
+   "0:01:07,700"
+  ],
+  "expected": "A line shown at 0:59:59.999 should appear at 0:01:07.700. Moving every line 3532.299 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:59:59.999",
+   "1:00:00"
+  ],
+  "expected": "A line shown at 0:59:59.999 should appear at 1:00:00.000. Moving every line 0.001 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:59:59.999",
+   "10:20:30.5"
+  ],
+  "expected": "A line shown at 0:59:59.999 should appear at 10:20:30.500. Moving every line 33630.501 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:59:59.999",
+   "0:59:59.999"
+  ],
+  "expected": "Both times are the same, so the shift is 0 seconds. Nothing moves."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:59:59.999",
+   "99:59:59.999"
+  ],
+  "expected": "A line shown at 0:59:59.999 should appear at 99:59:59.999. Moving every line 356400 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:59:59.999",
+   "99:59:59"
+  ],
+  "expected": "A line shown at 0:59:59.999 should appear at 99:59:59.000. Moving every line 356399.001 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59.999",
+   "0:00:00"
+  ],
+  "expected": "A line shown at 99:59:59.999 should appear at 0:00:00.000. Moving every line 359999.999 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59.999",
+   "0:00:00.000"
+  ],
+  "expected": "A line shown at 99:59:59.999 should appear at 0:00:00.000. Moving every line 359999.999 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59.999",
+   "0:01:05.200"
+  ],
+  "expected": "A line shown at 99:59:59.999 should appear at 0:01:05.200. Moving every line 359934.799 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59.999",
+   "0:01:07,700"
+  ],
+  "expected": "A line shown at 99:59:59.999 should appear at 0:01:07.700. Moving every line 359932.299 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59.999",
+   "1:00:00"
+  ],
+  "expected": "A line shown at 99:59:59.999 should appear at 1:00:00.000. Moving every line 356399.999 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59.999",
+   "10:20:30.5"
+  ],
+  "expected": "A line shown at 99:59:59.999 should appear at 10:20:30.500. Moving every line 322769.499 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59.999",
+   "0:59:59.999"
+  ],
+  "expected": "A line shown at 99:59:59.999 should appear at 0:59:59.999. Moving every line 356400 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59.999",
+   "99:59:59.999"
+  ],
+  "expected": "Both times are the same, so the shift is 0 seconds. Nothing moves."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59.999",
+   "99:59:59"
+  ],
+  "expected": "A line shown at 99:59:59.999 should appear at 99:59:59.000. Moving every line 0.999 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59",
+   "0:00:00"
+  ],
+  "expected": "A line shown at 99:59:59.000 should appear at 0:00:00.000. Moving every line 359999 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59",
+   "0:00:00.000"
+  ],
+  "expected": "A line shown at 99:59:59.000 should appear at 0:00:00.000. Moving every line 359999 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59",
+   "0:01:05.200"
+  ],
+  "expected": "A line shown at 99:59:59.000 should appear at 0:01:05.200. Moving every line 359933.8 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59",
+   "0:01:07,700"
+  ],
+  "expected": "A line shown at 99:59:59.000 should appear at 0:01:07.700. Moving every line 359931.3 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59",
+   "1:00:00"
+  ],
+  "expected": "A line shown at 99:59:59.000 should appear at 1:00:00.000. Moving every line 356399 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59",
+   "10:20:30.5"
+  ],
+  "expected": "A line shown at 99:59:59.000 should appear at 10:20:30.500. Moving every line 322768.5 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59",
+   "0:59:59.999"
+  ],
+  "expected": "A line shown at 99:59:59.000 should appear at 0:59:59.999. Moving every line 356399.001 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59",
+   "99:59:59.999"
+  ],
+  "expected": "A line shown at 99:59:59.000 should appear at 99:59:59.999. Moving every line 0.999 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "99:59:59",
+   "99:59:59"
+  ],
+  "expected": "Both times are the same, so the shift is 0 seconds. Nothing moves."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "",
+   "0:01:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:00",
+   ""
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "x",
+   "0:01:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:00",
+   "x"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:5:00",
+   "0:01:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:00",
+   "1:5:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:60:00",
+   "0:01:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:00",
+   "0:60:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:60",
+   "0:01:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:00",
+   "0:00:60"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "100:00:00",
+   "0:01:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:00",
+   "100:00:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00",
+   "0:01:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:00",
+   "0:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00.",
+   "0:01:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:00",
+   "0:00:00."
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00.1234",
+   "0:01:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:00",
+   "0:00:00.1234"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "-0:01:00",
+   "0:01:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:00",
+   "-0:01:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00.x",
+   "0:01:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:00",
+   "0:00:00.x"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:00 5",
+   "0:01:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:01:00",
+   "0:00:00 5"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:05",
+   "0:00:04"
+  ],
+  "expected": "A line shown at 0:00:05.000 should appear at 0:00:04.000. Moving every line 1 second earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:05",
+   "0:00:06"
+  ],
+  "expected": "A line shown at 0:00:05.000 should appear at 0:00:06.000. Moving every line 1 second later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:00:05.5",
+   "0:00:05.5"
+  ],
+  "expected": "Both times are the same, so the shift is 0 seconds. Nothing moves."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "The two anchors give a scale factor of 1.04165 on the time between them. A line shown at 0:50:00.000 should then appear at 0:52:05.042, 125.042 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:00:00"
+  ],
+  "expected": "The two anchors give a scale factor of 1.04165 on the time between them. A line shown at 0:00:00.000 should then appear at 0:00:00.083, 0.083 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:00:00.000"
+  ],
+  "expected": "The two anchors give a scale factor of 1.04165 on the time between them. A line shown at 0:00:00.000 should then appear at 0:00:00.083, 0.083 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:01:05.200"
+  ],
+  "expected": "The two anchors give a scale factor of 1.04165 on the time between them. A line shown at 0:01:05.200 should then appear at 0:01:07.999, 2.799 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:01:07,700"
+  ],
+  "expected": "The two anchors give a scale factor of 1.04165 on the time between them. A line shown at 0:01:07.700 should then appear at 0:01:10.603, 2.903 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "1:00:00"
+  ],
+  "expected": "The two anchors give a scale factor of 1.04165 on the time between them. A line shown at 1:00:00.000 should then appear at 1:02:30.033, 150.033 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "10:20:30.5"
+  ],
+  "expected": "The two anchors give a scale factor of 1.04165 on the time between them. A line shown at 10:20:30.500 should then appear at 10:46:21.336, 1550.836 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:59:59.999"
+  ],
+  "expected": "The two anchors give a scale factor of 1.04165 on the time between them. A line shown at 0:59:59.999 should then appear at 1:02:30.032, 150.033 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "99:59:59.999"
+  ],
+  "expected": "ERR:that line would land after 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "99:59:59"
+  ],
+  "expected": "ERR:that line would land after 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:00:01"
+  ],
+  "expected": "The two anchors give a scale factor of 1.04165 on the time between them. A line shown at 0:00:01.000 should then appear at 0:00:01.125, 0.125 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:00:00.001"
+  ],
+  "expected": "The two anchors give a scale factor of 1.04165 on the time between them. A line shown at 0:00:00.001 should then appear at 0:00:00.085, 0.084 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "2:03:04.05"
+  ],
+  "expected": "The two anchors give a scale factor of 1.04165 on the time between them. A line shown at 2:03:04.050 should then appear at 2:08:11.699, 307.649 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   " 0:10:00 "
+  ],
+  "expected": "The two anchors give a scale factor of 1.04165 on the time between them. A line shown at 0:10:00.000 should then appear at 0:10:25.075, 25.075 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "x",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "1:5:00",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:60:00",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:60",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "100:00:00",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "x",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "1:5:00",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:60:00",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:60",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "100:00:00",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "x",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:5:00",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "0:60:00",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "0:00:60",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "100:00:00",
+   "1:44:10.000",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "x",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:5:00",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "0:60:00",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "0:00:60",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "100:00:00",
+   "0:50:00.000"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   ""
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "x"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "1:5:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:60:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "0:00:60"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:10.000",
+   "0:00:10.500",
+   "1:40:00.000",
+   "1:44:10.000",
+   "100:00:00"
+  ],
+  "expected": "ERR:the time must look like 0:01:05.200 (hours, minutes, seconds, optional milliseconds), up to 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:10:00",
+   "0:10:00",
+   "0:10:00",
+   "0:20:00",
+   "0:15:00"
+  ],
+  "expected": "ERR:the last line must be shown later than the first line"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:20:00",
+   "0:10:00",
+   "0:10:00",
+   "0:20:00",
+   "0:15:00"
+  ],
+  "expected": "ERR:the last line must be shown later than the first line"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:10:00",
+   "0:20:00",
+   "0:20:00",
+   "0:20:00",
+   "0:15:00"
+  ],
+  "expected": "ERR:the last line must be wanted later than the first line"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:10:00",
+   "0:20:00",
+   "0:30:00",
+   "0:10:00",
+   "0:15:00"
+  ],
+  "expected": "ERR:the last line must be wanted later than the first line"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:10:00",
+   "0:05:00",
+   "0:20:00",
+   "0:06:00",
+   "0:00:00"
+  ],
+  "expected": "The two anchors give a scale factor of 0.1 on the time between them. A line shown at 0:00:00.000 should then appear at 0:04:00.000, 240 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:10:00",
+   "0:05:00",
+   "0:20:00",
+   "0:06:00",
+   "99:59:59.999"
+  ],
+  "expected": "The two anchors give a scale factor of 0.1 on the time between them. A line shown at 99:59:59.999 should then appear at 10:04:00.000, 323759.999 seconds earlier. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:00",
+   "0:00:00",
+   "1:00:00",
+   "2:00:00",
+   "99:59:59.999"
+  ],
+  "expected": "ERR:that line would land after 99:59:59.999"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:00",
+   "0:00:00",
+   "1:00:00",
+   "1:00:00",
+   "0:30:00"
+  ],
+  "expected": "The two anchors give a scale factor of 1 on the time between them. A line shown at 0:30:00.000 should then appear at 0:30:00.000, at the same time. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:00:00",
+   "0:00:00.001",
+   "0:00:00.003",
+   "0:00:00.004",
+   "0:00:00.002"
+  ],
+  "expected": "The two anchors give a scale factor of 1 on the time between them. A line shown at 0:00:00.002 should then appear at 0:00:00.003, 0.001 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "25",
+   "0:50:00"
+  ],
+  "expected": "Both frame rates are 25 fps, so the scale factor is 1 and no time changes."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 0:50:00.000 becomes 0:52:08.128, 128.128 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 24 fps: multiply every time by 1.04167. A line shown at 0:50:00.000 becomes 0:52:05.000, 125 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "29.97",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 29.97 fps: multiply every time by 0.83417. A line shown at 0:50:00.000 becomes 0:41:42.503, 497.497 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "30",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 30 fps: multiply every time by 0.83333. A line shown at 0:50:00.000 becomes 0:41:40.000, 500 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "23.976",
+   "25",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 23.976 fps on a video at 25 fps: multiply every time by 0.95904. A line shown at 0:50:00.000 becomes 0:47:57.120, 122.88 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "23.976",
+   "23.976",
+   "0:50:00"
+  ],
+  "expected": "Both frame rates are 23.976 fps, so the scale factor is 1 and no time changes."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "23.976",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 23.976 fps on a video at 24 fps: multiply every time by 0.999. A line shown at 0:50:00.000 becomes 0:49:57.000, 3 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "23.976",
+   "29.97",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 23.976 fps on a video at 29.97 fps: multiply every time by 0.8. A line shown at 0:50:00.000 becomes 0:40:00.000, 600 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "23.976",
+   "30",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 23.976 fps on a video at 30 fps: multiply every time by 0.7992. A line shown at 0:50:00.000 becomes 0:39:57.600, 602.4 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "25",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 24 fps on a video at 25 fps: multiply every time by 0.96. A line shown at 0:50:00.000 becomes 0:48:00.000, 120 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "23.976",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 24 fps on a video at 23.976 fps: multiply every time by 1.001. A line shown at 0:50:00.000 becomes 0:50:03.003, 3.003 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "Both frame rates are 24 fps, so the scale factor is 1 and no time changes."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "29.97",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 24 fps on a video at 29.97 fps: multiply every time by 0.8008. A line shown at 0:50:00.000 becomes 0:40:02.402, 597.598 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "30",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 24 fps on a video at 30 fps: multiply every time by 0.8. A line shown at 0:50:00.000 becomes 0:40:00.000, 600 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "29.97",
+   "25",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 29.97 fps on a video at 25 fps: multiply every time by 1.1988. A line shown at 0:50:00.000 becomes 0:59:56.400, 596.4 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "29.97",
+   "23.976",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 29.97 fps on a video at 23.976 fps: multiply every time by 1.25. A line shown at 0:50:00.000 becomes 1:02:30.000, 750 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "29.97",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 29.97 fps on a video at 24 fps: multiply every time by 1.24875. A line shown at 0:50:00.000 becomes 1:02:26.250, 746.25 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "29.97",
+   "29.97",
+   "0:50:00"
+  ],
+  "expected": "Both frame rates are 29.97 fps, so the scale factor is 1 and no time changes."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "29.97",
+   "30",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 29.97 fps on a video at 30 fps: multiply every time by 0.999. A line shown at 0:50:00.000 becomes 0:49:57.000, 3 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "30",
+   "25",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 30 fps on a video at 25 fps: multiply every time by 1.2. A line shown at 0:50:00.000 becomes 1:00:00.000, 600 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "30",
+   "23.976",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 30 fps on a video at 23.976 fps: multiply every time by 1.25125. A line shown at 0:50:00.000 becomes 1:02:33.754, 753.754 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "30",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 30 fps on a video at 24 fps: multiply every time by 1.25. A line shown at 0:50:00.000 becomes 1:02:30.000, 750 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "30",
+   "29.97",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 30 fps on a video at 29.97 fps: multiply every time by 1.001. A line shown at 0:50:00.000 becomes 0:50:03.003, 3.003 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "30",
+   "30",
+   "0:50:00"
+  ],
+  "expected": "Both frame rates are 30 fps, so the scale factor is 1 and no time changes."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "23.98",
+   "25",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 23.98 fps on a video at 25 fps: multiply every time by 0.9592. A line shown at 0:50:00.000 becomes 0:47:57.600, 122.4 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "23.98",
+   "23.976",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 23.98 fps on a video at 23.976 fps: multiply every time by 1.00017. A line shown at 0:50:00.000 becomes 0:50:00.501, 0.501 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "23.98",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 23.98 fps on a video at 24 fps: multiply every time by 0.99917. A line shown at 0:50:00.000 becomes 0:49:57.500, 2.5 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "23.98",
+   "29.97",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 23.98 fps on a video at 29.97 fps: multiply every time by 0.80013. A line shown at 0:50:00.000 becomes 0:40:00.400, 599.6 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "23.98",
+   "30",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 23.98 fps on a video at 30 fps: multiply every time by 0.79933. A line shown at 0:50:00.000 becomes 0:39:58.000, 602 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "1",
+   "25",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 1 fps on a video at 25 fps: multiply every time by 0.04. A line shown at 0:50:00.000 becomes 0:02:00.000, 2880 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "1",
+   "23.976",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 1 fps on a video at 23.976 fps: multiply every time by 0.04171. A line shown at 0:50:00.000 becomes 0:02:05.125, 2874.875 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "1",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 1 fps on a video at 24 fps: multiply every time by 0.04167. A line shown at 0:50:00.000 becomes 0:02:05.000, 2875 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "1",
+   "29.97",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 1 fps on a video at 29.97 fps: multiply every time by 0.03337. A line shown at 0:50:00.000 becomes 0:01:40.100, 2899.9 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "1",
+   "30",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 1 fps on a video at 30 fps: multiply every time by 0.03333. A line shown at 0:50:00.000 becomes 0:01:40.000, 2900 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "120",
+   "25",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 120 fps on a video at 25 fps: multiply every time by 4.8. A line shown at 0:50:00.000 becomes 4:00:00.000, 11400 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "120",
+   "23.976",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 120 fps on a video at 23.976 fps: multiply every time by 5.00501. A line shown at 0:50:00.000 becomes 4:10:15.015, 12015.015 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "120",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 120 fps on a video at 24 fps: multiply every time by 5. A line shown at 0:50:00.000 becomes 4:10:00.000, 12000 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "120",
+   "29.97",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 120 fps on a video at 29.97 fps: multiply every time by 4.004. A line shown at 0:50:00.000 becomes 3:20:12.012, 9012.012 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "120",
+   "30",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 120 fps on a video at 30 fps: multiply every time by 4. A line shown at 0:50:00.000 becomes 3:20:00.000, 9000 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "60.5",
+   "25",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 60.5 fps on a video at 25 fps: multiply every time by 2.42. A line shown at 0:50:00.000 becomes 2:01:00.000, 4260 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "60.5",
+   "23.976",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 60.5 fps on a video at 23.976 fps: multiply every time by 2.52336. A line shown at 0:50:00.000 becomes 2:06:10.070, 4570.07 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "60.5",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 60.5 fps on a video at 24 fps: multiply every time by 2.52083. A line shown at 0:50:00.000 becomes 2:06:02.500, 4562.5 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "60.5",
+   "29.97",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 60.5 fps on a video at 29.97 fps: multiply every time by 2.01869. A line shown at 0:50:00.000 becomes 1:40:56.056, 3056.056 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "60.5",
+   "30",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 60.5 fps on a video at 30 fps: multiply every time by 2.01667. A line shown at 0:50:00.000 becomes 1:40:50.000, 3050 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25.000",
+   "25",
+   "0:50:00"
+  ],
+  "expected": "Both frame rates are 25 fps, so the scale factor is 1 and no time changes."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25.000",
+   "23.976",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 0:50:00.000 becomes 0:52:08.128, 128.128 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25.000",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 24 fps: multiply every time by 1.04167. A line shown at 0:50:00.000 becomes 0:52:05.000, 125 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25.000",
+   "29.97",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 29.97 fps: multiply every time by 0.83417. A line shown at 0:50:00.000 becomes 0:41:42.503, 497.497 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25.000",
+   "30",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 30 fps: multiply every time by 0.83333. A line shown at 0:50:00.000 becomes 0:41:40.000, 500 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   " 24 ",
+   "25",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 24 fps on a video at 25 fps: multiply every time by 0.96. A line shown at 0:50:00.000 becomes 0:48:00.000, 120 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   " 24 ",
+   "23.976",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 24 fps on a video at 23.976 fps: multiply every time by 1.001. A line shown at 0:50:00.000 becomes 0:50:03.003, 3.003 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   " 24 ",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "Both frame rates are 24 fps, so the scale factor is 1 and no time changes."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   " 24 ",
+   "29.97",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 24 fps on a video at 29.97 fps: multiply every time by 0.8008. A line shown at 0:50:00.000 becomes 0:40:02.402, 597.598 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   " 24 ",
+   "30",
+   "0:50:00"
+  ],
+  "expected": "Subtitles timed at 24 fps on a video at 30 fps: multiply every time by 0.8. A line shown at 0:50:00.000 becomes 0:40:00.000, 600 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   "0:00:00"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 0:00:00.000 becomes 0:00:00.000, at the same time."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   "0:00:00.000"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 0:00:00.000 becomes 0:00:00.000, at the same time."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   "0:01:05.200"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 0:01:05.200 becomes 0:01:07.985, 2.785 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   "0:01:07,700"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 0:01:07.700 becomes 0:01:10.591, 2.891 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   "1:00:00"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 1:00:00.000 becomes 1:02:33.754, 153.754 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   "10:20:30.5"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 10:20:30.500 becomes 10:47:00.591, 1590.091 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   "0:59:59.999"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 0:59:59.999 becomes 1:02:33.753, 153.754 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   "99:59:59.999"
+  ],
+  "expected": "ERR:that line would land after 99:59:59.999"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   "99:59:59"
+  ],
+  "expected": "ERR:that line would land after 99:59:59.999"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   "0:00:01"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 0:00:01.000 becomes 0:00:01.043, 0.043 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   "0:00:00.001"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 0:00:00.001 becomes 0:00:00.001, at the same time."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   "2:03:04.05"
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 2:03:04.050 becomes 2:08:19.418, 315.368 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "25",
+   "23.976",
+   " 0:10:00 "
+  ],
+  "expected": "Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 0:10:00.000 becomes 0:10:25.626, 25.626 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "0",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "0",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "0.999",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "0.999",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "120.001",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "120.001",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "121",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "121",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "1000",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "1000",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "x",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "x",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24.",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "24.",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24.1234",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "24.1234",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "-24",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   "-24",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   ".5",
+   "24",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "24",
+   ".5",
+   "0:50:00"
+  ],
+  "expected": "ERR:the frame rate must be a number from 1 to 120 with up to 3 decimals"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "120",
+   "1",
+   "0:50:00"
+  ],
+  "expected": "ERR:that line would land after 99:59:59.999"
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "120",
+   "1",
+   "0:00:00.001"
+  ],
+  "expected": "Subtitles timed at 120 fps on a video at 1 fps: multiply every time by 120. A line shown at 0:00:00.001 becomes 0:00:00.120, 0.119 seconds later."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:10:40.184",
+   "0:39:24.583",
+   "0:52:31.858",
+   "1:34:42.911",
+   "1:13:49.274"
+  ],
+  "expected": "The two anchors give a scale factor of 1.32116 on the time between them. A line shown at 1:13:49.274 should then appear at 2:02:50.584, 2941.31 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:09:21.097",
+   "0:44:47.395",
+   "1:09:14.137",
+   "2:19:02.963",
+   "0:30:01.923"
+  ],
+  "expected": "The two anchors give a scale factor of 1.57403 on the time between them. A line shown at 0:30:01.923 should then appear at 1:17:20.498, 2838.575 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:43:27.478",
+   "0:29:16.492",
+   "1:10:59.207",
+   "0:34:04.735",
+   "0:08:02.422"
+  ],
+  "expected": "The two anchors give a scale factor of 0.17451 on the time between them. A line shown at 0:08:02.422 should then appear at 0:23:05.649, 903.227 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:15:54.813",
+   "0:36:52.489",
+   "0:47:29.481",
+   "0:49:25.475",
+   "0:31:23.854"
+  ],
+  "expected": "The two anchors give a scale factor of 0.39742 on the time between them. A line shown at 0:31:23.854 should then appear at 0:43:01.712, 697.858 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:48:54.951",
+   "0:18:10.863",
+   "1:14:19.002",
+   "1:28:43.442",
+   "0:39:07.654"
+  ],
+  "expected": "ERR:that line would land before 0:00:00.000"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:40:41.552",
+   "0:10:02.631",
+   "1:16:36.809",
+   "0:17:43.372",
+   "1:47:48.913"
+  ],
+  "expected": "The two anchors give a scale factor of 0.21378 on the time between them. A line shown at 1:47:48.913 should then appear at 0:24:23.582, 5005.331 seconds earlier. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:02:22.805",
+   "0:32:24.295",
+   "0:51:41.730",
+   "1:57:10.033",
+   "1:11:39.329"
+  ],
+  "expected": "The two anchors give a scale factor of 1.71878 on the time between them. A line shown at 1:11:39.329 should then appear at 2:31:28.441, 4789.112 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:48:04.227",
+   "0:08:05.488",
+   "2:24:11.018",
+   "0:50:35.041",
+   "0:11:19.743"
+  ],
+  "expected": "ERR:that line would land before 0:00:00.000"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:10:21.124",
+   "0:07:02.122",
+   "1:38:24.678",
+   "0:20:42.518",
+   "1:35:16.222"
+  ],
+  "expected": "The two anchors give a scale factor of 0.15527 on the time between them. A line shown at 1:35:16.222 should then appear at 0:20:13.256, 4502.966 seconds earlier. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:04:31.439",
+   "0:03:22.415",
+   "0:22:15.546",
+   "0:33:18.940",
+   "1:41:07.930"
+  ],
+  "expected": "The two anchors give a scale factor of 1.68829 on the time between them. A line shown at 1:41:07.930 should then appear at 2:46:28.593, 3920.663 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:45:54.272",
+   "0:26:07.767",
+   "1:49:42.381",
+   "0:50:56.127",
+   "1:57:51.893"
+  ],
+  "expected": "The two anchors give a scale factor of 0.3888 on the time between them. A line shown at 1:57:51.893 should then appear at 0:54:06.448, 3825.445 seconds earlier. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:19:50.202",
+   "0:03:19.569",
+   "0:23:08.532",
+   "1:05:13.067",
+   "1:52:52.599"
+  ],
+  "expected": "The two anchors give a scale factor of 18.72383 on the time between them. A line shown at 1:52:52.599 should then appear at 29:05:23.444, 97950.845 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:13:05.674",
+   "0:19:45.363",
+   "0:52:59.354",
+   "1:42:27.943",
+   "1:39:28.418"
+  ],
+  "expected": "The two anchors give a scale factor of 2.0732 on the time between them. A line shown at 1:39:28.418 should then appear at 3:18:50.234, 5961.816 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:36:55.343",
+   "0:09:56.698",
+   "1:37:47.382",
+   "0:16:25.688",
+   "0:54:03.389"
+  ],
+  "expected": "The two anchors give a scale factor of 0.10651 on the time between them. A line shown at 0:54:03.389 should then appear at 0:11:46.198, 2537.191 seconds earlier. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:45:51.416",
+   "0:25:01.410",
+   "2:22:31.687",
+   "1:04:48.309",
+   "1:05:17.069"
+  ],
+  "expected": "The two anchors give a scale factor of 0.41152 on the time between them. A line shown at 1:05:17.069 should then appear at 0:33:01.094, 1935.975 seconds earlier. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:37:49.660",
+   "0:06:47.037",
+   "0:59:08.844",
+   "1:19:34.239",
+   "1:34:45.458"
+  ],
+  "expected": "The two anchors give a scale factor of 3.41405 on the time between them. A line shown at 1:34:45.458 should then appear at 3:21:08.752, 6383.294 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:44:56.726",
+   "0:03:10.989",
+   "1:40:54.179",
+   "0:11:57.802",
+   "0:58:16.575"
+  ],
+  "expected": "The two anchors give a scale factor of 0.15691 on the time between them. A line shown at 0:58:16.575 should then appear at 0:05:16.492, 3180.083 seconds earlier. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:44:41.033",
+   "0:29:25.707",
+   "0:46:11.527",
+   "0:31:50.883",
+   "0:16:01.983"
+  ],
+  "expected": "ERR:that line would land before 0:00:00.000"
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:07:11.531",
+   "0:43:20.331",
+   "0:17:00.127",
+   "1:32:11.976",
+   "1:22:34.642"
+  ],
+  "expected": "The two anchors give a scale factor of 4.98074 on the time between them. A line shown at 1:22:34.642 should then appear at 6:58:48.781, 20174.139 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:41:19.795",
+   "0:09:06.566",
+   "1:43:44.290",
+   "0:15:22.959",
+   "1:22:15.116"
+  ],
+  "expected": "The two anchors give a scale factor of 0.10052 on the time between them. A line shown at 1:22:15.116 should then appear at 0:13:13.372, 4141.744 seconds earlier. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:23:25.956",
+   "0:15:51.610",
+   "0:55:20.452",
+   "0:49:13.699",
+   "1:06:40.848"
+  ],
+  "expected": "The two anchors give a scale factor of 1.04575 on the time between them. A line shown at 1:06:40.848 should then appear at 1:01:05.225, 335.623 seconds earlier. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:23:54.941",
+   "0:44:45.620",
+   "1:34:39.406",
+   "1:49:43.889",
+   "0:14:02.167"
+  ],
+  "expected": "The two anchors give a scale factor of 0.91844 on the time between them. A line shown at 0:14:02.167 should then appear at 0:35:41.195, 1299.028 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:47:42.525",
+   "0:38:52.751",
+   "2:27:36.183",
+   "1:28:11.713",
+   "1:14:53.267"
+  ],
+  "expected": "The two anchors give a scale factor of 0.49368 on the time between them. A line shown at 1:14:53.267 should then appear at 0:52:17.819, 1355.448 seconds earlier. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:09:53.065",
+   "0:42:25.688",
+   "1:26:11.015",
+   "2:00:52.668",
+   "1:38:53.389"
+  ],
+  "expected": "The two anchors give a scale factor of 1.02819 on the time between them. A line shown at 1:38:53.389 should then appear at 2:13:56.530, 2103.141 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "stretchTruth",
+  "args": [
+   "0:21:18.579",
+   "0:32:06.526",
+   "0:47:48.203",
+   "2:05:39.185",
+   "1:39:41.529"
+  ],
+  "expected": "The two anchors give a scale factor of 3.53081 on the time between them. A line shown at 1:39:41.529 should then appear at 5:08:51.745, 12550.216 seconds later. This assumes the drift grows steadily from the first line to the last."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "53:48:41.750",
+   "1:39:37.494"
+  ],
+  "expected": "A line shown at 53:48:41.750 should appear at 1:39:37.494. Moving every line 187744.256 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:33:43.039",
+   "0:25:26.314"
+  ],
+  "expected": "A line shown at 1:33:43.039 should appear at 0:25:26.314. Moving every line 4096.725 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:17:06.222",
+   "1:08:37.493"
+  ],
+  "expected": "A line shown at 0:17:06.222 should appear at 1:08:37.493. Moving every line 3091.271 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:28:02.639",
+   "1:04:35.085"
+  ],
+  "expected": "A line shown at 0:28:02.639 should appear at 1:04:35.085. Moving every line 2192.446 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:09:55.837",
+   "0:55:39.934"
+  ],
+  "expected": "A line shown at 1:09:55.837 should appear at 0:55:39.934. Moving every line 855.903 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:23:05.780",
+   "2:57:39.263"
+  ],
+  "expected": "A line shown at 1:23:05.780 should appear at 2:57:39.263. Moving every line 5673.483 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:46:19.294",
+   "0:28:13.896"
+  ],
+  "expected": "A line shown at 0:46:19.294 should appear at 0:28:13.896. Moving every line 1085.398 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "18:14:43.149",
+   "61:59:05.051"
+  ],
+  "expected": "A line shown at 18:14:43.149 should appear at 61:59:05.051. Moving every line 157461.902 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "30:52:00.424",
+   "0:05:20.265"
+  ],
+  "expected": "A line shown at 30:52:00.424 should appear at 0:05:20.265. Moving every line 110800.159 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "5:11:51.540",
+   "1:36:54.364"
+  ],
+  "expected": "A line shown at 5:11:51.540 should appear at 1:36:54.364. Moving every line 12897.176 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:11:07.957",
+   "0:08:46.095"
+  ],
+  "expected": "A line shown at 0:11:07.957 should appear at 0:08:46.095. Moving every line 141.862 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:34:39.748",
+   "70:12:34.371"
+  ],
+  "expected": "A line shown at 0:34:39.748 should appear at 70:12:34.371. Moving every line 250674.623 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:46:22.621",
+   "82:53:24.873"
+  ],
+  "expected": "A line shown at 1:46:22.621 should appear at 82:53:24.873. Moving every line 292022.252 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "88:05:10.884",
+   "1:54:34.684"
+  ],
+  "expected": "A line shown at 88:05:10.884 should appear at 1:54:34.684. Moving every line 310236.2 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "7:50:16.980",
+   "0:38:42.361"
+  ],
+  "expected": "A line shown at 7:50:16.980 should appear at 0:38:42.361. Moving every line 25894.619 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:06:51.522",
+   "85:04:19.727"
+  ],
+  "expected": "A line shown at 1:06:51.522 should appear at 85:04:19.727. Moving every line 302248.205 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:41:00.127",
+   "1:12:17.599"
+  ],
+  "expected": "A line shown at 1:41:00.127 should appear at 1:12:17.599. Moving every line 1722.528 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:34:17.626",
+   "0:54:24.342"
+  ],
+  "expected": "A line shown at 1:34:17.626 should appear at 0:54:24.342. Moving every line 2393.284 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "1:54:41.171",
+   "1:32:32.915"
+  ],
+  "expected": "A line shown at 1:54:41.171 should appear at 1:32:32.915. Moving every line 1328.256 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:28:24.374",
+   "0:12:19.554"
+  ],
+  "expected": "A line shown at 0:28:24.374 should appear at 0:12:19.554. Moving every line 964.82 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:26:15.953",
+   "1:00:15.512"
+  ],
+  "expected": "A line shown at 0:26:15.953 should appear at 1:00:15.512. Moving every line 2039.559 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "0:14:45.281",
+   "0:17:16.611"
+  ],
+  "expected": "A line shown at 0:14:45.281 should appear at 0:17:16.611. Moving every line 151.33 seconds later does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "27:20:28.698",
+   "7:44:07.426"
+  ],
+  "expected": "A line shown at 27:20:28.698 should appear at 7:44:07.426. Moving every line 70581.272 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "67:17:37.620",
+   "0:51:27.521"
+  ],
+  "expected": "A line shown at 67:17:37.620 should appear at 0:51:27.521. Moving every line 239170.099 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "shiftTruth",
+  "args": [
+   "44:42:10.559",
+   "0:53:44.103"
+  ],
+  "expected": "A line shown at 44:42:10.559 should appear at 0:53:44.103. Moving every line 157706.456 seconds earlier does that. It fixes the whole file only if every line is off by the same amount."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "41",
+   "25",
+   "0:25:36.992"
+  ],
+  "expected": "Subtitles timed at 41 fps on a video at 25 fps: multiply every time by 1.64. A line shown at 0:25:36.992 becomes 0:42:00.667, 983.675 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "33",
+   "30",
+   "1:05:31.015"
+  ],
+  "expected": "Subtitles timed at 33 fps on a video at 30 fps: multiply every time by 1.1. A line shown at 1:05:31.015 becomes 1:12:04.117, 393.102 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "38",
+   "24",
+   "0:24:52.875"
+  ],
+  "expected": "Subtitles timed at 38 fps on a video at 24 fps: multiply every time by 1.58333. A line shown at 0:24:52.875 becomes 0:39:23.719, 870.844 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "120",
+   "29.97",
+   "1:00:07.883"
+  ],
+  "expected": "Subtitles timed at 120 fps on a video at 29.97 fps: multiply every time by 4.004. A line shown at 1:00:07.883 becomes 4:00:45.978, 10838.095 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "109",
+   "30",
+   "1:24:02.920"
+  ],
+  "expected": "Subtitles timed at 109 fps on a video at 30 fps: multiply every time by 3.63333. A line shown at 1:24:02.920 becomes 5:05:22.609, 13279.689 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "45",
+   "24",
+   "1:11:46.560"
+  ],
+  "expected": "Subtitles timed at 45 fps on a video at 24 fps: multiply every time by 1.875. A line shown at 1:11:46.560 becomes 2:14:34.800, 3768.24 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "110",
+   "24",
+   "0:44:26.541"
+  ],
+  "expected": "Subtitles timed at 110 fps on a video at 24 fps: multiply every time by 4.58333. A line shown at 0:44:26.541 becomes 3:23:41.646, 9555.105 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "100",
+   "23.976",
+   "1:14:16.599"
+  ],
+  "expected": "Subtitles timed at 100 fps on a video at 23.976 fps: multiply every time by 4.17084. A line shown at 1:14:16.599 becomes 5:09:47.750, 14131.151 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "23",
+   "23.976",
+   "1:14:04.166"
+  ],
+  "expected": "Subtitles timed at 23 fps on a video at 23.976 fps: multiply every time by 0.95929. A line shown at 1:14:04.166 becomes 1:11:03.256, 180.91 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "27",
+   "23.976",
+   "1:23:42.461"
+  ],
+  "expected": "Subtitles timed at 27 fps on a video at 23.976 fps: multiply every time by 1.12613. A line shown at 1:23:42.461 becomes 1:34:15.925, 633.464 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "30",
+   "29.97",
+   "1:04:06.949"
+  ],
+  "expected": "Subtitles timed at 30 fps on a video at 29.97 fps: multiply every time by 1.001. A line shown at 1:04:06.949 becomes 1:04:10.800, 3.851 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "95",
+   "29.97",
+   "1:06:31.095"
+  ],
+  "expected": "Subtitles timed at 95 fps on a video at 29.97 fps: multiply every time by 3.16984. A line shown at 1:06:31.095 becomes 3:30:51.119, 8660.024 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "89",
+   "29.97",
+   "0:51:53.998"
+  ],
+  "expected": "Subtitles timed at 89 fps on a video at 29.97 fps: multiply every time by 2.96964. A line shown at 0:51:53.998 becomes 2:34:07.442, 6133.444 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "103",
+   "29.97",
+   "1:54:10.468"
+  ],
+  "expected": "Subtitles timed at 103 fps on a video at 29.97 fps: multiply every time by 3.43677. A line shown at 1:54:10.468 becomes 6:32:23.484, 16693.016 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "82",
+   "30",
+   "1:34:35.496"
+  ],
+  "expected": "Subtitles timed at 82 fps on a video at 30 fps: multiply every time by 2.73333. A line shown at 1:34:35.496 becomes 4:18:33.022, 9837.526 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "117",
+   "23.976",
+   "1:47:07.493"
+  ],
+  "expected": "Subtitles timed at 117 fps on a video at 23.976 fps: multiply every time by 4.87988. A line shown at 1:47:07.493 becomes 8:42:45.394, 24937.901 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "101",
+   "23.976",
+   "0:05:33.216"
+  ],
+  "expected": "Subtitles timed at 101 fps on a video at 23.976 fps: multiply every time by 4.21255. A line shown at 0:05:33.216 becomes 0:23:23.688, 1070.472 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "89",
+   "25",
+   "0:41:30.866"
+  ],
+  "expected": "Subtitles timed at 89 fps on a video at 25 fps: multiply every time by 3.56. A line shown at 0:41:30.866 becomes 2:27:47.483, 6376.617 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "97",
+   "30",
+   "1:21:16.445"
+  ],
+  "expected": "Subtitles timed at 97 fps on a video at 30 fps: multiply every time by 3.23333. A line shown at 1:21:16.445 becomes 4:22:47.172, 10890.727 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "52",
+   "30",
+   "0:12:42.336"
+  ],
+  "expected": "Subtitles timed at 52 fps on a video at 30 fps: multiply every time by 1.73333. A line shown at 0:12:42.336 becomes 0:22:01.382, 559.046 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "41",
+   "29.97",
+   "1:37:41.156"
+  ],
+  "expected": "Subtitles timed at 41 fps on a video at 29.97 fps: multiply every time by 1.36803. A line shown at 1:37:41.156 becomes 2:13:38.265, 2157.109 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "79",
+   "23.976",
+   "1:45:57.838"
+  ],
+  "expected": "Subtitles timed at 79 fps on a video at 23.976 fps: multiply every time by 3.29496. A line shown at 1:45:57.838 becomes 5:49:08.832, 14590.994 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "36",
+   "23.976",
+   "1:53:25.233"
+  ],
+  "expected": "Subtitles timed at 36 fps on a video at 23.976 fps: multiply every time by 1.5015. A line shown at 1:53:25.233 becomes 2:50:18.068, 3412.835 seconds later."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "17",
+   "23.976",
+   "0:48:54.442"
+  ],
+  "expected": "Subtitles timed at 17 fps on a video at 23.976 fps: multiply every time by 0.70904. A line shown at 0:48:54.442 becomes 0:34:40.644, 853.798 seconds earlier."
+ },
+ {
+  "fn": "fpsTruth",
+  "args": [
+   "58",
+   "30",
+   "0:47:36.199"
+  ],
+  "expected": "Subtitles timed at 58 fps on a video at 30 fps: multiply every time by 1.93333. A line shown at 0:47:36.199 becomes 1:32:01.985, 2665.786 seconds later."
+ }
+]
