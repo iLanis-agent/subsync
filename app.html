@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sub Sync - app</title>
+<style>
+  :root { --accent:#0b6b7a; --ink:#0a2a30; --paper:#f1fafb; --soft:#d9eef1; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #7fbcc6; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .row3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #7fbcc6; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#4f7f88; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sub Sync</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page retimes subtitle times from the numbers you type. It has not seen your subtitle file or your video. It does not know which lines are wrong, whether the drift is steady, whether your video has cuts or a different intro, or what your player does, and it gives no verdict that a fix is right. Check any result against the picture. Every time and frame rate is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The shift truth</h2>
+    <p class="note">One line is early or late. Type when it shows and when it should show.</p>
+    <div class="row2">
+      <div><label for="s-a">Shown at</label><input id="s-a" type="text" value="0:01:05.200"></div>
+      <div><label for="s-b">Should be</label><input id="s-b" type="text" value="0:01:07.700"></div>
+    </div>
+    <div class="out" id="s-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The stretch truth</h2>
+    <p class="note">Drift grows over the film. Anchor the first and last lines, then ask about any line.</p>
+    <div class="row2">
+      <div><label for="t-a1">First shown</label><input id="t-a1" type="text" value="0:00:10.000"></div>
+      <div><label for="t-b1">First should</label><input id="t-b1" type="text" value="0:00:10.500"></div>
+      <div><label for="t-a2">Last shown</label><input id="t-a2" type="text" value="1:40:00.000"></div>
+      <div><label for="t-b2">Last should</label><input id="t-b2" type="text" value="1:44:10.000"></div>
+      <div><label for="t-q">Line at</label><input id="t-q" type="text" value="0:50:00.000"></div>
+    </div>
+    <div class="out" id="t-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The frame rate truth</h2>
+    <p class="note">Subtitles timed for one frame rate, video at another. Every time scales by the ratio.</p>
+    <div class="row2">
+      <div><label for="f-s">Subtitle fps</label><input id="f-s" type="text" value="25"></div>
+      <div><label for="f-v">Video fps</label><input id="f-v" type="text" value="23.976"></div>
+      <div><label for="f-q">Line at</label><input id="f-q" type="text" value="0:50:00.000"></div>
+    </div>
+    <div class="out" id="f-out"></div>
+  </div>
+
+  <footer>Sub Sync is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("s-out", () => shiftTruth(v("s-a"), v("s-b")));
+    show("t-out", () => stretchTruth(v("t-a1"), v("t-b1"), v("t-a2"), v("t-b2"), v("t-q")));
+    show("f-out", () => fpsTruth(v("f-s"), v("f-v"), v("f-q")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
