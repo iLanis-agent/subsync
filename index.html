@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sub Sync - subtitle retiming arithmetic</title>
+<style>
+  :root { --accent:#0b6b7a; --ink:#0a2a30; --paper:#f1fafb; --soft:#d9eef1; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#4f7f88; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sub Sync</h1>
+  <p class="lede">A subtitle shown at 0:01:05.200 that should appear at 0:01:07.700 needs every line moved 2.5 seconds later.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Sub Sync retimes subtitle times from the numbers you type. It has not seen your subtitle file or your video. It does not know which lines are wrong, whether the drift is steady, whether your video has cuts or a different intro, or what your player does, and it gives no verdict that a fix is right. Check any result against the picture. Every time and frame rate is your own entry.
+  </div>
+  <p class="lede" style="font-size:1rem">Starting examples: one line that is 2.5 seconds early, a film whose last line is 4 minutes 10 seconds off, and subtitles timed at 25 fps on a 23.976 fps video.</p>
+  <section>
+    <h2>The shift truth</h2>
+    <p>A line shown at 0:01:05.200 should appear at 0:01:07.700. Moving every line 2.5 seconds later does that. It fixes the whole file only if every line is off by the same amount.</p>
+  </section>
+  <section>
+    <h2>The stretch truth</h2>
+    <p>With the first line moving from 0:00:10.000 to 0:00:10.500 and the last from 1:40:00.000 to 1:44:10.000, the scale factor is 1.04165. A line shown at 0:50:00.000 should then appear at 0:52:05.042, which is 125.042 seconds later.</p>
+  </section>
+  <section>
+    <h2>The frame rate truth</h2>
+    <p>Subtitles timed at 25 fps on a video at 23.976 fps: multiply every time by 1.04271. A line shown at 0:50:00.000 becomes 0:52:08.128, which is 128.128 seconds later.</p>
+  </section>
+  <a class="btn" href="app.html">Retime your lines</a>
+  <footer>Sub Sync is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
